@@ -33,7 +33,7 @@ function update_script() {
 
   NODE_VERSION="24" setup_nodejs
 
-  if check_for_gh_release "pangolin" "fosrl/pangolin"; then
+  #if check_for_gh_release "pangolin" "fosrl/pangolin"; then
     msg_info "Stopping Service"
     systemctl stop pangolin
     systemctl stop gerbil
@@ -82,7 +82,7 @@ function update_script() {
     systemctl start gerbil
     msg_ok "Started Services"
     msg_ok "Updated successfully!"
-  fi
+  #fi
   exit
 }
 
