@@ -22,6 +22,7 @@ read WAZUH_MANAGER
 apt-get install wazuh-agent
 
 echo "Wazah Agent installed"
+echo "Config available at /var/ossec/etc/ossec.conf"
 
 # Enable and start the Wazuh agent service.
 systemctl daemon-reload
