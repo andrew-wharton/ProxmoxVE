@@ -17,9 +17,9 @@ echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4
 apt-get update
 
 # --- Deploy a Wazuh agent ---
-echo "Enter IP or hostname for Wazah Manager: "
-read WAZUH_MANAGER
-apt-get install wazuh-agent
+#echo "Enter IP or hostname for Wazah Manager: "
+#read WAZUH_MANAGER
+WAZUH_MANAGER="192.168.0.29" apt-get install wazuh-agent
 
 echo "Wazah Agent installed"
 echo "Config available at /var/ossec/etc/ossec.conf"
